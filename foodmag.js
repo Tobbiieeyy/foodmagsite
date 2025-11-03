@@ -141,7 +141,7 @@ let page = 1;
 // Function to fetch images based on query or search
 async function search(fquery) { isaFood(fquery);
     const api = j+e+ui+r+k+liu+s+v;
-    const endpoint = `https://api.pexels.com/v1/search?query=${encodeURIComponent(fquery)}&page=${page}&per_page=30`;
+    const endpoint = `https://api.pexels.com/v1/search?query=${encodeURIComponent(fquery)}&page=${page}&per_page=90`;
 
     // const reci = "";
     // const endoint1 = `https://api.spoonacular.com/recipes/complexSearch?query=${query}&number=15&apiKey=${reci}`;
@@ -363,5 +363,6 @@ const v = "ggoU1Y3APRKt";
 let newItems = ["Burger ", "Shawarma", "Pizza ", "Chicken", "Fish","Bread"];
 
  
+
 
 
