@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOOD MAG – Explore Foods: Images, Recipes, History & Ethical Eating</title>
+    <meta name="description" content="Search any food to see image galleries, quick history, recipes, and ethical eating tips. FOOD MAG – the friendly place to explore foods you love." />
+    <link rel="canonical" href="https://www.foodmag.example/" />
+    <meta name="robots" content="index,follow,max-image-preview:large" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="FOOD MAG – Explore Foods: Images, Recipes, History & Ethical Eating" />
+    <meta property="og:description" content="Search any food to see images, recipes, history and ethical eating tips." />
+    <meta property="og:url" content="https://www.foodmag.example/" />
+    <meta property="og:image" content="https://www.foodmag.example/og/foodmag-hero.jpg" />
+    <meta property="og:locale" content="en_GB" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+
+    <link rel="icon" href="" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css" type="text/css">
+    <link rel="stylesheet" href="./css/res.css" media="screen and (max-width: 1024px)">
+    <link rel="stylesheet" href="./css/res2.css" media="screen and (max-width: 750px)">
+    <style>
+    /* Accessibility & minor SEO UX touches */
+      .visually-hidden{position:absolute!important;height:1px;width:1px;overflow:hidden;clip:rect(1px,1px,1px,1px);white-space:nowrap}
+      img[loading="lazy"]{content-visibility:auto}
+      nav a{text-decoration:none}
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="brand"> FOOD-MAG </div>
+        <div> 
+            <button onclick="showContent('foodmag', this)" class="menu_items">Food Mag</button>
+            <button onclick="showContent('gallery', this)" class="menu_items" >Gallery</button>
+            <button onclick="showContent('community', this)" class="menu_items">Community</button>
+            <input type="text" id="searchTerm" placeholder="Fav food ?" style="display: none;">
+            <button type="submit" id="searchButton"><img src="Photos/icons8-search-50.png"></button>
+        </div>            
+    </div>
+    <div id="foodmag" class="content">
+        <div id="header_background">
+            <div id="extraPic">
+                <div id="newContainer">
+                    <div id="firstPic">
+                        <img src="Photos/refreshing-lemon-cheesecake-slice-with-mint-garnish (1).jpg" alt="image of food searched" id="img2">
+                    </div>                    
+                    <div id="secContainer"> 
+                        <div id="secPic"><img src="Photos/bowl-of-ice-cream-with-chocolate-768x960 (2).jpg" alt="image of food searched" id="img1"></div>
+                        <div id="secPic"><img src="Photos/burger-with-melted-cheese-768x768 (1).jpg" alt="image of food searched" id="img3"></div>                      
+                    </div>
+                </div>
+                
+            </div>
+            <div id="mainPic">
+                <H1>The Only Friendly Website Where You Explore Food! </H1>
+                <p>This website is created for we foodies that are curious and want to know the depths food.<br> Search to get more insights on your favourite food.</p>                
+                <div id="space">
+                    <button type="button" class="navLink">
+                        <img src="Photos/oodGallery.png" alt="link to food gallery page">
+                        <p>Food <br> Gallery</p>
+                    </button>
+                    <button type="button" class="navLink">
+                        <img src="Photos/RecipeGallery .png" alt="link to recipe gallery page" >
+                        <p>Ingredients <br> Gallery</p>
+                    </button>
+                    <!--<button type="button" class="navLink">
+                        <img src="/Photos/Community.png" alt="link to community page">
+                        <p>Comm<br>unity</p>
+                    </button>-->
+                </div>
+                <div>    
+                </div>
+            </div>            
+        </div>
+        <niv id="ads"></niv>
+        <!--<div class="mainBody">
+            <h2 class="homeHeading"> <img src="/Photos/Recipe image.png" class="circleImg">RECIPE <p>Recipie for this is not yet available, search another food</p></h2>
+            <h2 class="homeHeading"> <img src="/Photos/culture image.png" class="circleImg">HISTORY / CULTURE <p>History and culture for this is not yet available, search another food</p></h2>-->
+            <h2 class="homeHeading"><img src="Photos/EthicalEating.png" class="circleImg">ETHICAL EATING TIPS<p id="eE">Ethical eating for food will be back shortly</p></h2>
+            <!--<h2 class="homeHeading" style="display: none;"><img src="/Photos/Blog.png" class="circleImg">Blog <p>More food blogs will soon be made available</p></h2>
+        </div>-->
+    </div>
+    <div id="gallery" class="content">
+        <div > <img src="Photos/1.png"></div>
+        <div id="ads"></div>
+        <div id="headerGallery">
+            <button  onclick="displayContent('foodGallery', this)" class="galleryItems"> <img src="Photos/oodGallery.png">Food Gallery</button>
+            <button  onclick="displayContent('recipieGallery', this)" class="galleryItems" > <img src="Photos/RecipeGallery .png">Ingredients Gallery</button>
+            <!--<button  onclick="displayContent('foodStyling', this)" class="galleryItems"> <img src="/Photos/Food styling.png">Food Styling</button>-->
+        </div>
+        <div id="foodGallery" class="submenu" >
+            <div id="foodGalleryShow"> 
+                
+            </div>           
+        </div>
+        <div id="recipieGallery" class="submenu" style="display: none;" >
+            <h2>Ingredients gallery will be back</h2>
+        </div>
+        <div id="foodStyling" class="submenu" style="display: none;">
+            <h2>This is how we style your food</h2>
+            <div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora quidem temporibus, laudantium, soluta eveniet, corporis aspernatur reiciendis ipsa laboriosam modi quaerat? Aperiam culpa incidunt totam necessitatibus est dolores repellendus obcaecati?</p></div>
+        </div>
+    </div>
+    <div id="community" class="content">
+        <div> <img src="Photos/2.png"></div>
+        <h1>COMMUNITY WILL BE BACK SOON</h1>
+        <!--<div id="headerCommunity">
+            <button  onclick="loadContent('restaurants', this)" class="communityItems"> <img src="/Photos/Restaurants.png">Restaurants</button>
+            <button  onclick="loadContent('fastFood', this)" class="communityItems" > <img src="/Photos/ast Food.png">Fast Food</button>
+            <button  onclick="loadContent('foodExperience', this)" class="communityItems"> <img src="/Photos/Community.png">Food Experience</button>
+        </div>
+        <div id="restaurants" class="communityMenu" >
+            <p>Rate your best restaurant on the list, and see what other people think. Comment in the food experience page why it should be higher or lower</p>
+            
+        </div>
+        <div id="fastFood" class="communityMenu" style="display: none;">
+            <p>Rate your best fast food chain on the list, and see what other people think. Comment in the food experience page why it should be higher or lower</p>
+            <ol id="orderedList">
+                <li class="list-item">
+                    <span class="item-text">Mc Donalds</span>
+                    <p class="votes"> 0 votes</p>
+                    <div class="buttons">
+                        <button class="up">▲</button>
+                        <button class="down">▼</button>
+                    </div>
+                </li>
+                <li class="list-item">
+                    <span class="item-text">Five guys</span>
+                    <p class="votes"> 0 votes</p>
+                    <div class="buttons">
+                        <button class="up">▲</button>
+                        <button class="down">▼</button>
+                    </div>
+                </li>
+                <li class="list-item">
+                    <span class="item-text">KFC</span>
+                    <p class="votes"> 0 votes</p>
+                    <div class="buttons">
+                        <button class="up">▲</button>
+                        <button class="down">▼</button>
+                    </div>
+                </li>
+                <li class="list-item">
+                    <span class="item-text">Meatloaf</span>
+                    <p class="votes"> 0 votes</p>
+                    <div class="buttons">
+                        <button class="up">▲</button>
+                        <button class="down">▼</button>
+                    </div>
+                </li>
+            </ol>
+        </div>
+        <div id="foodExperience" class="communityMenu" style="display: none;">
+            <p>Share your best food experience with others </p>
+        </div>-->
+    </div>
+    <div class="footer">
+        <div class="upfooter">
+            <div>Contact Us <p class="pFooter">foodmagazineb1@gmail.com<br> Sorry our api isn't well optimized</p></div>
+            <div>Tools / Resources used
+                <p class="pFooter">icons8.com</p>
+                <p class="pFooter">freepic.com</p>
+                <p class="pFooter">pexels</p>
+            </div>
+        </div>       
+        <div id="copyright">&copy;2025 FOOD MAG</div>
+    </div>
+    <script src="foodmag.js"></script>
+</body>
+</html>
