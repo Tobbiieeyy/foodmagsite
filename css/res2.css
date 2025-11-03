@@ -1,0 +1,36 @@
+
+.header{
+    flex-direction: column;
+}
+#header_background{
+    flex-direction: column;
+}
+#extraPic{
+    flex: 1 1 50%;
+}
+#firstPic{
+    height: 400px;
+}
+#secPic{
+    height: 200px;
+}
+#header_background{
+    padding: 0px;
+    margin: 0px;  
+    gap: 0px; 
+}
+#headerGallery{
+    border-bottom: none;
+}
+
+.homeHeading img{
+    height: 50px;
+    width: 50px;
+    padding: none;
+    border: 3px solid #4b3621;
+    border-radius: 20px;
+}
+
+.newTip {
+    font-size: 20px;
+}

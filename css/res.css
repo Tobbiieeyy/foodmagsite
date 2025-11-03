@@ -1,0 +1,18 @@
+
+#mainPic h1{
+    margin-bottom: 20px;
+    font-size: 40px;
+}
+#mainPic p{
+    margin-bottom: 0px;
+}
+#space{
+    margin-top: 0px;
+}
+.homeHeading img{
+    height: 50px;
+    width: 50px;
+    padding: none;
+    border: 3px solid #4b3621;
+    border-radius: 20px;
+}
